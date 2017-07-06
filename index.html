@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- TITLE -->
+		<title> AUTHENTICATE </title>
+		
+		<!-- CSS imports -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Roboto:100,300,400,700" rel="stylesheet" type="text/css">
+		<link href="bootstrap.min.css" rel="stylesheet">
+		<link href="buttons.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	
+	<body>
+		<div class="title">
+			<h1> <strong>FILE</strong> UPLOAD </h1>
+		</div>
+		
+		<div class="login">
+			<!-- enctype을 안 넣으면 $_FILE 변수가 채워지질 않음. -->
+			<form enctype="multipart/form-data" action="load_csv.php" method="post">
+				<label for="upload" class="btn btn-login outline">Upload</label>
+				<input id="upload" name="upload" type="file" onchange="this.form.submit()"/>
+			</form>
+		</div>
+	</body>
+</html>
+

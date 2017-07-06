@@ -1,0 +1,81 @@
+* {
+	font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: -webkit-flex;
+	display:         flex;
+	flex-direction: column;
+	-webkit-align-items: center;
+		align-items: center;
+	-webkit-justify-content: center;
+		justify-content: center;
+
+	/* Color of the 2016: #f7cac9 to #92a8d1 */
+	/* Gradient background */
+	background: -webkit-linear-gradient(left, #65997d, #fccb6e); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #65997d, #fccb6e); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #65997d, #fccb6e); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #65997d, #fccb62); /* Standard syntax (must be last) */
+	background-attachment: fixed;
+}
+
+strong {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 9vmin;
+}
+
+h2 {
+	font-size: 5vmin;
+}
+
+h1, h2 {
+	text-align: center;
+	margin: 0 0 5px 0;
+	color: #444;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.title {
+	margin-bottom: 10px;
+}
+
+.login {
+	display: -webkit-flex;
+	display:         flex;
+
+	-webkit-align-items: center;
+		align-items: center;
+	-webkit-justify-content: center;
+		justify-content: center;
+}
+
+.login .form-control {
+	margin-right: 10px;
+	padding: 24px 22px;
+
+	width: 100%;
+
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#upload {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+	border: 0;
+}

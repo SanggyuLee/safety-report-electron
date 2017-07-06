@@ -2,9 +2,10 @@
   "name": "safety-report-electron",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "dev": "electron . --debug"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/sanggyulee/safety-report-electron/issues"
   },
-  "homepage": "https://github.com/sanggyulee/safety-report-electron#readme"
+  "homepage": "https://github.com/sanggyulee/safety-report-electron#readme",
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron": "^1.6.11"
+  }
 }
